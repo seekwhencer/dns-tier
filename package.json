@@ -1,0 +1,27 @@
+{
+  "name": "dns-tier",
+  "version": "0.0.1",
+  "description": "dns groundstation for the field",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "export NODE_DEBUG=true && export NODE_ENV=default && node --experimental-modules --experimental-json-modules index.js"
+  },
+  "author": "Matthias Kallenbach",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dateformat": "^3.0.3",
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "formidable": "^1.2.1",
+    "fs-extra": "^7.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "ramda": "^0.26.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-watch": "^6.0.1"
+  }
+}

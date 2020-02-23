@@ -1,0 +1,26 @@
+{
+  "config": {
+    "log-queries": true,
+    "strict-order": true,
+    "expand-hosts": true,
+    "no-resolv": true,
+    "no-hosts": true,
+    "domain-needed": false,
+    "bogus-priv": false,
+    "server": [
+      "192.168.178.1",
+      "8.8.8.8"
+    ],
+    "interface": "wlan0",
+    "no-dhcp-interface": [
+      "eth0",
+      "wlan1"
+    ],
+    "dhcp-range": "wlan0,192.168.180.100,192.168.180.150,24h",
+    "dhcp-option": "option:dns-server,192.168.180.1"
+  },
+  "dynamic": {
+    "dhcp-leasefile": true,
+    "conf-dir": true
+  }
+}

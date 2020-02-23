@@ -1,0 +1,5 @@
+{
+  "storage_folder" : "storage",
+  "presets_folder": "presets",
+  "run_folder": "run"
+}

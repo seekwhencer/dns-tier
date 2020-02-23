@@ -1,0 +1,7 @@
+{
+  "env": "default",
+  "bin": {
+    "dnsmasq": "/usr/sbin/dnsmasq",
+    "hostapd": "/usr/sbin/hostapd"
+  }
+}
