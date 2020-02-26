@@ -18,7 +18,21 @@
       "wlan1"
     ],
     "dhcp-range": "wlan0,192.168.180.100,192.168.180.150,24h",
-    "dhcp-option": "option:dns-server,192.168.180.1"
+    "dhcp-option": "option:dns-server,192.168.180.1",
+    "local": "/koffer/",
+    "domain": "koffer",
+    "listen-address": [
+      "127.0.0.1",
+      "192.168.180.1"
+    ],
+    "bind-interfaces": true,
+    "address": [
+      "/#/192.168.180.1",
+      "/koffer/192.168.180.1",
+      "/git.koffer/192.168.180.1",
+      "/npm.koffer/192.168.180.1",
+      "/docker.koffer/192.168.180.1"
+    ]
   },
   "dynamic": {
     "dhcp-leasefile": true,
