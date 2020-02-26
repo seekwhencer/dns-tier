@@ -2,6 +2,83 @@
 
 **work in progress**
 
+## installation
+
+At first: you have a fresh installed RPi.
+
+- install dependencies:
+```
+sudo apt-get update -y
+sudo apt-get install git make curl -y
+```
+
+- then install node.js
+```
+cd ~
+sudo curl -L https://git.io/n-install | bash
+```
+
+- modify root's `.bashrc` file
+```
+sudo su
+nano /root/.bashrc
+```
+
+- add this line (and yes: this shares the `n` folder with the install user: `pi`)
+```
+export N_PREFIX="/home/pi/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"
+```
+
+- and logout from the console or source the `.bashrc` file
+```
+exit
+sudo su
+```
+or
+```
+. /root/.bashrc
+```
+
+- get the source
+```
+// from the admin console if needed
+
+exit
+```
+```
+// as user pi
+
+cd /somewhere/on/my/disk
+git clone https://github.com/seekwhencer/dns-tier.git
+```
+
+- install it
+```
+// as user pi
+
+cd dns-tier
+npm install
+```
+## ... at least
+
+- change user (!)
+```
+sudo su
+```
+- run in dev mode
+```
+npm run dev
+```
+
+- run in production
+```
+npm start 
+
+// or
+
+npm run prod
+```
+
 ## acceptance criterias
 
 - wifi access point (hostapd)
