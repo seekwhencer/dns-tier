@@ -7,19 +7,19 @@
 At first: you have a fresh installed RPi.
 
 - install dependencies:
-```
+```bash
 sudo apt-get update -y
 sudo apt-get install git make curl -y
 ```
 
 - then install node.js
-```
+```bash
 cd ~
 sudo curl -L https://git.io/n-install | bash
 ```
 
 - modify root's `.bashrc` file
-```
+```bash
 sudo su
 nano /root/.bashrc
 ```
@@ -30,22 +30,22 @@ export N_PREFIX="/home/pi/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N
 ```
 
 - and logout from the console or source the `.bashrc` file
-```
+```bash
 exit
 sudo su
 ```
 or
-```
+```bash
 . /root/.bashrc
 ```
 
 - get the source
-```
+```bash
 // from the admin console if needed
 
 exit
 ```
-```
+```bash
 // as user pi
 
 cd /somewhere/on/my/disk
@@ -53,7 +53,7 @@ git clone https://github.com/seekwhencer/dns-tier.git
 ```
 
 - install it
-```
+```bash
 // as user pi
 
 cd dns-tier
@@ -62,16 +62,16 @@ npm install
 ## ... at least
 
 - change user (!)
-```
+```bash
 sudo su
 ```
 - run in dev mode
-```
+```bash
 npm run dev
 ```
 
 - run in production
-```
+```bash
 npm start 
 
 // or
