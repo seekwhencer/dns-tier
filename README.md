@@ -6,10 +6,18 @@
 
 At first: you have a fresh installed RPi.
 
+- get the source
+```bash
+// as user pi
+
+cd /somewhere/on/my/disk
+git clone https://github.com/seekwhencer/dns-tier.git
+```
 - install dependencies:
 ```bash
 sudo apt-get update -y
-sudo apt-get install git make curl -y
+cd dns-tier
+sudo ./install.sh
 ```
 
 - then install node.js
@@ -38,21 +46,13 @@ or
 ```bash
 . /root/.bashrc
 ```
-
-- get the source
+- install it
 ```bash
 // from the admin console if needed
 
 exit
 ```
-```bash
-// as user pi
 
-cd /somewhere/on/my/disk
-git clone https://github.com/seekwhencer/dns-tier.git
-```
-
-- install it
 ```bash
 // as user pi
 
