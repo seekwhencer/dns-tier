@@ -27,8 +27,13 @@
 - create run config for hostapd as `hostapd.conf`
 - create run config for dnsmasq as `dnsmasq.conf`
 - create network interfaces file in `/etc/network/interfaces`
+- managing `iptables`
 
-This opens a wifi accesspoint with the given configuration.
+## Working on:
+- managing ip4 forward
+- managing `/etc/resolv.conf`
+
+This opens a wifi access point with the given configuration.
 To modify the configuration, go into the folder `storage/presets/default` and edit manually the stored `json` files.
 But: later these files will be modified by the app.  
  
