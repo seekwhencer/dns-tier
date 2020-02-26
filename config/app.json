@@ -2,6 +2,7 @@
   "env": "default",
   "bin": {
     "dnsmasq": "/usr/sbin/dnsmasq",
-    "hostapd": "/usr/sbin/hostapd"
+    "hostapd": "/usr/sbin/hostapd",
+    "iptables": "/usr/sbin/iptables"
   }
 }
