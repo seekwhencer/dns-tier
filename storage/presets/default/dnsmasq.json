@@ -4,7 +4,7 @@
     "log-queries": true,
     "strict-order": true,
     "expand-hosts": true,
-    "no-resolv": false,
+    "no-resolv": true,
     "no-hosts": true,
     "domain-needed": false,
     "bogus-priv": false,
@@ -29,6 +29,7 @@
     "address": [
       "/#/192.168.180.1",
       "/koffer/192.168.180.1",
+      "/api.koffer/192.168.180.1",
       "/git.koffer/192.168.180.1",
       "/npm.koffer/192.168.180.1",
       "/docker.koffer/192.168.180.1"
@@ -36,6 +37,7 @@
   },
   "dynamic": {
     "dhcp-leasefile": true,
-    "conf-dir": true
+    "conf-dir": false,
+    "hosts-dir": false
   }
 }
