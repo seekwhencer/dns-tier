@@ -12,20 +12,22 @@ At first: you have a fresh installed RPi.
 ```bash
 // as user pi
 
+sudo apt-get install git -y
+sudo apt-get update -y
+
 cd /somewhere/on/my/disk
 git clone https://github.com/seekwhencer/dns-tier.git
 ```
 - install dependencies:
 ```bash
-sudo apt-get update -y
 cd dns-tier
 sudo ./install.sh
 ```
 
-- then install node.js
+- then install node.js with **[n](https://github.com/tj/n)**
 ```bash
 cd ~
-sudo curl -L https://git.io/n-install | bash
+curl -L https://git.io/n-install | bash
 ```
 
 - modify root's `.bashrc` file
@@ -66,6 +68,7 @@ npm install
 - change user (!)
 ```bash
 sudo su
+cd /somewhere/on/my/disk/dns-tier
 ```
 - run in dev mode
 ```bash
