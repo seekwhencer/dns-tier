@@ -110,6 +110,9 @@ npm run prod
 - create run config for dnsmasq as `dnsmasq.conf`
 - create network interfaces file in `/etc/network/interfaces`
 - managing `iptables`
+- sharing internet
+- check dhcp leases
+- check wifi clients (`arp-scan`)
 
 ## Working on:
 - managing ip4 forward
