@@ -1,5 +1,6 @@
 {
-  "verbose": 1,
+  "verbose": 0,
+  "repeat_scan": true,
   "config": {
     "ssid": "groundstation",
     "wpa_passphrase": "CHANGE!ME",
