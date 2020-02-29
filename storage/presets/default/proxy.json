@@ -1,1 +1,10 @@
-{"config":{}}
+{
+  "port": 80,
+  "mapping": [
+    {
+      "host": "git.koffer",
+      "port": 8080
+    }
+  ],
+  "config": {}
+}
