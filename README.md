@@ -1,5 +1,7 @@
 # dns-tier
 
+![alt text](../master/public/images/mood.jpg?raw=true "Foto #1")
+
 **work in progress**
 
 ## installation
