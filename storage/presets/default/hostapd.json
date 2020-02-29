@@ -1,5 +1,5 @@
 {
-  "verbose": 0,
+  "verbose": 1,
   "config": {
     "ssid": "groundstation",
     "wpa_passphrase": "CHANGE!ME",

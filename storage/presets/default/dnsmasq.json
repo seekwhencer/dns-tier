@@ -27,7 +27,6 @@
     ],
     "bind-interfaces": true,
     "address": [
-      "/#/192.168.180.1",
       "/koffer/192.168.180.1",
       "/api.koffer/192.168.180.1",
       "/git.koffer/192.168.180.1",
