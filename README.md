@@ -113,15 +113,13 @@ npm run prod
 - sharing internet
 - check dhcp leases
 - check wifi clients (`arp-scan`)
+- reverse proxy
+- mapping local app from port to hostname or local subdomain
 
-## Working on:
-- managing ip4 forward
-- managing `/etc/resolv.conf`
+## Configuration
 
 This opens a wifi access point with the given configuration.
-To modify the configuration, go into the folder `storage/presets/default` and edit manually the stored `json` files.
-But: later these files will be modified by the app.  
- 
-To change the super global configuration, edit the files from the `config/` folder.  
- 
-To change the environment, edit `config/app.json`.
+- To modify the configuration, go into the folder `storage/presets/default` and edit manually the stored `json` files.
+- But: later these files will be modified by the app.  
+- To change the super global configuration, edit the files from the `config/` folder.  
+- To change the environment, edit `config/app.json`.

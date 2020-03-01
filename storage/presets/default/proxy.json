@@ -2,8 +2,8 @@
   "port": 80,
   "mapping": [
     {
-      "host": "git.koffer",
-      "port": 8080
+      "host": "npm.koffer",
+      "port": 4000
     }
   ],
   "config": {}
