@@ -1,21 +1,46 @@
-{
-  "verbose": 0,
-  "repeat_scan": true,
-  "config": {
-    "ssid": "groundstation",
-    "wpa_passphrase": "CHANGE!ME",
-    "interface": "wlan0",
-    "driver": "nl80211",
-    "hw_mode": "g",
-    "channel": 5,
-    "ieee80211n": 1,
-    "wmm_enabled": 1,
-    "macaddr_acl": 0,
-    "auth_algs": 1,
-    "ignore_broadcast_ssid": 0,
-    "country_code": "DE",
-    "wpa": 2,
-    "wpa_key_mgmt": "WPA-PSK",
-    "rsn_pairwise": "CCMP"
+[
+  {
+    "name": "groundstation",
+    "verbose": 0,
+    "repeat_scan": true,
+    "config": {
+      "ssid": "groundstation",
+      "wpa_passphrase": "CHANGE!ME",
+      "interface": "wlan0",
+      "driver": "nl80211",
+      "hw_mode": "g",
+      "channel": 5,
+      "ieee80211n": 1,
+      "wmm_enabled": 1,
+      "macaddr_acl": 0,
+      "auth_algs": 1,
+      "ignore_broadcast_ssid": 0,
+      "country_code": "DE",
+      "wpa": 2,
+      "wpa_key_mgmt": "WPA-PSK",
+      "rsn_pairwise": "CCMP"
+    }
+  },
+  {
+    "name": "fieldstation",
+    "verbose": 2,
+    "repeat_scan": true,
+    "config": {
+      "ssid": "fieldstation",
+      "wpa_passphrase": "KOFFER!3000",
+      "interface": "wlan1",
+      "driver": "nl80211",
+      "hw_mode": "g",
+      "channel": 6,
+      "ieee80211n": 1,
+      "wmm_enabled": 1,
+      "macaddr_acl": 0,
+      "auth_algs": 1,
+      "ignore_broadcast_ssid": 0,
+      "country_code": "DE",
+      "wpa": 2,
+      "wpa_key_mgmt": "WPA-PSK",
+      "rsn_pairwise": "CCMP"
+    }
   }
-}
+]
