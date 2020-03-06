@@ -1,1 +1,9 @@
-{"config":{"from":"eth0","to":"wlan0"}}
+{
+  "config": {
+    "from": "eth0",
+    "to": [
+      "wlan0",
+      "wlan1"
+    ]
+  }
+}
