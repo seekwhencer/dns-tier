@@ -21,9 +21,11 @@
     ],
     "dhcp-range": "192.168.180.100,192.168.180.150,24h",
     "dhcp-option": [
-      "wlan0,option:dns-server,192.168.180.1",
-      "wlan1,option:dns-server,192.168.180.2"
+      "wlan0,6,192.168.180.1",
+      "wlan1,6,192.168.180.1",
+      "wlan1,3,192.168.180.1"
     ],
+    "dhcp-authoritative" : false,
     "local": "/koffer/",
     "domain": "koffer",
     "listen-address": [

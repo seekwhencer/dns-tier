@@ -23,7 +23,7 @@
   },
   {
     "name": "fieldstation",
-    "verbose": 2,
+    "verbose": 0,
     "repeat_scan": true,
     "config": {
       "ssid": "fieldstation",
