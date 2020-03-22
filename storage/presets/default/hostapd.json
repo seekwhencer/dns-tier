@@ -1,5 +1,6 @@
 [
   {
+    "enable": true,
     "name": "groundstation",
     "verbose": 0,
     "repeat_scan": true,
@@ -22,6 +23,7 @@
     }
   },
   {
+    "enable": false,
     "name": "fieldstation",
     "verbose": 0,
     "repeat_scan": true,

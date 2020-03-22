@@ -1,5 +1,5 @@
 {
-  "wan": {
+  "eth0": {
     "interface": "eth0",
     "auto": true,
     "dhcp": false,
@@ -10,13 +10,14 @@
       "broadcast": "192.168.178.255",
       "gateway": "192.168.178.1",
       "dns-nameserver": [
-        "192.168.178.1",
+        "192.168.178.2",
         "127.0.0.1"
       ]
     }
   },
-  "ap": {
-    "interface": "wlan0",
+  "eth1": {
+    "enable": true,
+    "interface": "eth1",
     "auto": true,
     "dhcp": false,
     "allow-hotplug": true,
@@ -24,14 +25,15 @@
       "address": "192.168.180.1",
       "netmask": "255.255.255.0",
       "broadcast": "192.168.180.255",
+      "gateway": "192.168.178.1",
       "dns-nameserver": [
-        "192.168.180.1",
-        "127.0.0.1"
+        "192.168.180.1"
       ]
     }
   },
-  "lan": {
-    "interface": "wlan1",
+  "wlan0": {
+    "enable": true,
+    "interface": "wlan0",
     "auto": true,
     "dhcp": false,
     "allow-hotplug": true,
@@ -40,8 +42,22 @@
       "netmask": "255.255.255.0",
       "broadcast": "192.168.180.255",
       "dns-nameserver": [
-        "192.168.180.1",
-        "127.0.0.1"
+        "192.168.180.1"
+      ]
+    }
+  },
+  "wlan1": {
+    "enable": false,
+    "interface": "wlan1",
+    "auto": true,
+    "dhcp": false,
+    "allow-hotplug": true,
+    "static": {
+      "address": "192.168.180.3",
+      "netmask": "255.255.255.0",
+      "broadcast": "192.168.180.255",
+      "dns-nameserver": [
+        "192.168.180.1"
       ]
     }
   }
